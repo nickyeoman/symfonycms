@@ -1,6 +1,5 @@
 <?php
 
-// src/AcmeTestBundle.php
 namespace NickYeoman\symfoncmsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
