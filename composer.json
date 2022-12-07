@@ -1,0 +1,21 @@
+{
+    "name": "nickyeoman/symfonycms",
+    "description": "Nix cms bundle for symfony",
+    "homepage": "https://www.nickyeoman.com",
+    "type": "symfony-bundle",
+    "license": "CCO-1.0",
+    "autoload": {
+        "psr-4": {
+            "Nickyeoman\\Symfonycms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nick Yeoman",
+            "email": "c@nickyeoman.com",
+            "homepage": "https://www.nickyeoman.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {}
+}
