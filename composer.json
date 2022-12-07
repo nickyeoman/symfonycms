@@ -3,7 +3,7 @@
     "description": "Nix cms bundle for symfony",
     "homepage": "https://www.nickyeoman.com",
     "type": "symfony-bundle",
-    "license": "CCO-1.0",
+    "license": "CC0-1.0",
     "autoload": {
         "psr-4": {
             "Nickyeoman\\Symfonycms\\": "src/"
