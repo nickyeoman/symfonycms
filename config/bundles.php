@@ -2,5 +2,5 @@
 // You must enable this manually
 
 return [
-    NickYeoman\symfonyCMSBundle\symfonyCMSBundle::class => ['all' => true],
+    NickYeoman\SymfonyCMSBundle\SymfonyCMSBundle::class => ['all' => true],
 ]
