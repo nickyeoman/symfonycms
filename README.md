@@ -1,5 +1,8 @@
 # Nix Symfony CMS Bundle
 
+github: https://github.com/nickyeoman/symfonycms
+packagist: https://packagist.org/packages/nickyeoman/symfonycms
+
 This is my first bundle.
 
 It's just me playing around so far.

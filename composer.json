@@ -1,5 +1,5 @@
 {
-    "name": "nickyeoman/symfonyCMSBundle",
+    "name": "nickyeoman/symfonycmsbundle",
     "description": "Nix cms bundle for symfony",
     "homepage": "https://www.nickyeoman.com",
     "type": "symfony-bundle",
