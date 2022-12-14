@@ -1,0 +1,9 @@
+parameters:
+  # nothing to declare
+  # see more here: https://macrini.medium.com/how-to-create-service-bundles-for-a-symfony-application-f266ecf01fca
+  
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.

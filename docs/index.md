@@ -1,3 +1,3 @@
 # Documentation
 
-goes here
+You need to updated your projects config/bundles.php 

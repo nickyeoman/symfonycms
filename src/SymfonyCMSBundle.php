@@ -1,9 +1,14 @@
 <?php
 
-namespace NickYeoman\symfoncmsBundle;
+namespace NickYeoman\symfonyCMSBundle;
 
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-class symfoncmsBundle extends AbstractBundle
+class symfonyCMSBundle extends AbstractBundle
 {
+
+    public function __construct()
+    {
+        echo("symfonyCMSBundle Loaded");
+    }
 }
