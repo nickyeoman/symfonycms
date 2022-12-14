@@ -6,9 +6,5 @@ use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
 class SymfonyCMSBundle extends AbstractBundle
 {
-
-    public function __construct()
-    {
-        echo("SymfonyCMSBundle Loaded");
-    }
+    // This is working
 }

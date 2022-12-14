@@ -1,5 +1,5 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: NickYeoman\SymfonyCMSBundle\Controller
-    type: attribute
+symfonycms:
+  resource:
+    path: ../../vendor/nickyeoman/symfonycms/src/Controller/
+    namespace: NickYeoman\SymfonyCMSBundle\Controller
+  type: attribute
