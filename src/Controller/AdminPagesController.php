@@ -1,12 +1,11 @@
 <?php
-// https://symfonycasts.com/screencast/symfony-bundle/routes-controllers
 
 namespace NickYeoman\SymfonyCMSBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class DashboardController extends AbstractController
+class AdminPagesController extends AbstractController
 {
 
     public function __construct()
@@ -14,10 +13,15 @@ class DashboardController extends AbstractController
         //
     }
     
-    #[Route('/admin/dashboard', name: 'admin_dashboard')]
+    #[Route('/admin/pages', name: 'admin_pages')]
     public function index() {
-        return $this->render('@SymfonyCMS/dashboard.html.twig', [
+
+
+        return $this->render('@SymfonyCMS/adminpages.html.twig', [
             'controller_name' => 'BundleController',
+            'pages' => [],
         ]);
+
+        
     }
 }

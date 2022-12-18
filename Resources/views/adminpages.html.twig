@@ -1,0 +1,36 @@
+{% set title = 'Pages Administrator' %}
+{% extends "@nytwig/master.html.twig" %}
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+<p>
+    <a href="/page/new">Create New Page</a> - 
+    <a href="/admin/dashboard">back to dashboard</a>
+</p>
+
+<table id="pages-list">
+  <tr>
+    <th>id</th>
+    <th>Slug</th>
+    <th>Title</th>
+    <th>Tags</th>
+    <th>View</th>
+  </tr>
+  {% for page in pages %}
+    <tr>
+      <td>{{ page.id }}</td>
+      <td><a href="/page/edit/{{ page.id }}">{{ page.slug }}</a></td>
+      <td><a href="/page/edit/{{ page.id }}">{% if page.draft %}<span>(draft)</span> - {% endif %}{{ page.title }}</a></td>
+      <td>
+        {% for tag in page.tags %}
+          <a href="/page/tagadmin/{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+      </td>
+      <td><a href="/page/{{ page.slug }}" target="_new">View {{ page.title }}</a></td>
+    </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
