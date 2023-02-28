@@ -1,6 +1,4 @@
 <?php
-// https://symfonycasts.com/screencast/symfony-bundle/routes-controllers
-
 namespace NickYeoman\SymfonyCMSBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

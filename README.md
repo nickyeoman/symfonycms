@@ -15,3 +15,4 @@ composer requrie nickyeoman/symfonycms
 * https://github.com/prestaconcept/PrestaSitemapBundle
 * https://jibébarth.fr/post/build-shareable-symfony-app/
 * https://www.contextualcode.com/Blog/How-to-start-build-reusable-Symfony-Bundle
+* https://davegebler.com/post/php/how-to-create-a-symfony-5-bundle
