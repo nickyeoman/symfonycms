@@ -8,7 +8,7 @@ use NickYeoman\SymfonyCMSBundle\DependencyInjection\SymfonyCMSExtension;
 
 class SymfonyCMSBundle extends AbstractBundle
 {
-    private $extension;
+    protected $extension;
 
     public function getPath(): string
     {
