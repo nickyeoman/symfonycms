@@ -1,7 +1,10 @@
 services:
-
+  # Default configuration for services in the app
   _defaults:
     autowire: true
     autoconfigure: true
-    
-  NickYeoman\SymfonyCMSBundle\Controller\: ~
+
+  # Define the services for controllers in the NickYeoman\SymfonyCMSBundle\Controller namespace
+  NickYeoman\SymfonyCMSBundle\Controller:
+    resource: '../src/Controller/*'
+    tags: ['controller.service_arguments']
