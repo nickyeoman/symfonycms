@@ -5,6 +5,6 @@ services:
     autoconfigure: true
 
   # Define the services for controllers in the NickYeoman\SymfonyCMSBundle\Controller namespace
-  NickYeoman\SymfonyCMSBundle\Controller:
+  NickYeoman\SymfonyCMSBundle\Controller\:
     resource: '../src/Controller/*'
     tags: ['controller.service_arguments']

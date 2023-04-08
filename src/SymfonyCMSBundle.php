@@ -8,7 +8,6 @@ use NickYeoman\SymfonyCMSBundle\DependencyInjection\SymfonyCMSExtension;
 
 class SymfonyCMSBundle extends AbstractBundle
 {
-    protected $extension;
 
     public function getPath(): string
     {
@@ -17,10 +16,6 @@ class SymfonyCMSBundle extends AbstractBundle
 
     public function getContainerExtension(): ?ExtensionInterface
     {
-        if (!$this->extension) {
-            $this->extension = new SymfonyCMSExtension();
-        }
-
-        return $this->extension ?: new SymfonyCMSExtension();
+        return new SymfonyCMSExtension();
     }
 }
