@@ -16,7 +16,6 @@ class SymfonyCMSExtension extends Extension
                 $container,
                 new FileLocator(paths:__DIR__ . '/../../config'))
             );
-        );
 
         $loader->load(resource: 'services.yaml');
     }
