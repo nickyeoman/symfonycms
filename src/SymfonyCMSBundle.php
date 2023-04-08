@@ -6,9 +6,9 @@ use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use NickYeoman\SymfonyCMSBundle\DependencyInjection\SymfonyCMSExtension;
 use Symfony\Component\Routing\RouteCollectionBuilder;
+
 class SymfonyCMSBundle extends AbstractBundle
 {
-
     public function getPath(): string
     {
         return dirname(__DIR__);
@@ -19,7 +19,7 @@ class SymfonyCMSBundle extends AbstractBundle
         return new SymfonyCMSExtension();
     }
 
-    public function configureRoutes(RouteCollectionBuilder $routes): void
+    protected function configureRoutes(RouteCollectionBuilder $routes): void
     {
         $routes->import('@SymfonyCMSBundle/Resources/config/routes.yaml');
     }
