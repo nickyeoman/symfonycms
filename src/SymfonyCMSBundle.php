@@ -8,13 +8,19 @@ use NickYeoman\SymfonyCMSBundle\DependencyInjection\SymfonyCMSExtension;
 
 class SymfonyCMSBundle extends AbstractBundle
 {
+    private $extension;
+
     public function getPath(): string
     {
-        return dirname(path:__DIR__);
+        return dirname(__DIR__);
     }
 
     public function getContainerExtension(): ?ExtensionInterface
     {
-        return new SymfonyCMSExtension();
+        if (!$this->extension) {
+            $this->extension = new SymfonyCMSExtension();
+        }
+
+        return $this->extension ?: new SymfonyCMSExtension();
     }
 }
