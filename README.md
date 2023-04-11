@@ -6,7 +6,11 @@ packagist: https://packagist.org/packages/nickyeoman/symfonycms
 ## Install
 composer requrie nickyeoman/symfonycms
 
-
+Place this in your config/routes/symfonycms.yaml
+```
+NickYeomanSymfonyCMS:
+    resource: '@SymfonyCMSBundle/config/routes.yaml'
+```
 
 ## Resources
 
@@ -16,3 +20,4 @@ composer requrie nickyeoman/symfonycms
 * https://jibébarth.fr/post/build-shareable-symfony-app/
 * https://www.contextualcode.com/Blog/How-to-start-build-reusable-Symfony-Bundle
 * https://davegebler.com/post/php/how-to-create-a-symfony-5-bundle
+
